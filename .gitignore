@@ -1,0 +1,30 @@
+# =====================
+# GLOBAL
+# =====================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.log
+
+# =====================
+# FLUTTER (hel_arte)
+# =====================
+hel_arte/.dart_tool/
+hel_arte/build/
+hel_arte/.metadata
+hel_arte/.packages
+hel_arte/android/
+hel_arte/ios/
+hel_arte/linux/
+hel_arte/macos/
+hel_arte/windows/
+hel_arte/web/
+
+# =====================
+# NODE BACKEND (Paleteria_APp/backend)
+# =====================
+Paleteria_APp/backend/node_modules/
+Paleteria_APp/backend/.env
+Paleteria_APp/backend/dist/
+Paleteria_APp/backend/build/

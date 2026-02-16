@@ -1,0 +1,39 @@
+
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_paleteria
+    environment:
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: Paleteria_Base_datos
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user_password
+    ports:
+      - "3309:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - paleteria_network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_USER: user
+      PMA_PASSWORD: user_password
+    ports:
+      - "8087:80"
+    networks:
+      - paleteria_network
+
+
+
+volumes:
+  mysql_data:
+
+networks:
+  paleteria_network:
+    driver: bridge
