@@ -6,8 +6,6 @@ Sistema completo de gestión empresarial desarrollado para una paletería, que i
 
 - [Características](#-características)
 - [Tecnologías](#-tecnologías)
-- [Arquitectura del Sistema](#-arquitectura-del-sistema)
-- [Estructura del Proyecto](#-estructura-del-proyecto)
 - [Requisitos Previos](#-requisitos-previos)
 - [Instalación y Configuración](#-instalación-y-configuración)
 
@@ -125,7 +123,7 @@ Sistema completo de gestión empresarial desarrollado para una paletería, que i
 ### Paso 1: Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/hel-arte-paleteria.git
+git clone https://github.com/AdriYoos/paleteria_flutter.git
 cd hel-arte-paleteria
 ```
 
